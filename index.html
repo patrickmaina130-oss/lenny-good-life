@@ -1,1 +1,191 @@
-<!DOCTYPE html><html><head><title>Lenny Good Life Global Platform</title><link rel="stylesheet" href="assets/css/style.css"></head><body><header><h1>Lenny Good Life Tours & Real Estate Management</h1></header><nav>Home | Tours | Real Estate | Cars | Gas | Jobs | Dashboard</nav><section><h2>Welcome</h2><p>Professional African themed company platform.</p></section><script src="assets/js/app.js"></script></body></html>
+Here is your Lenny Good Life V10 Enterprise System ready for copy & paste into GitHub / Render.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lenny Good Life V10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🚀 Lenny Good Life V10 Enterprise</h1>
+  <p>Cars • Real Estate • Gas Supply • Management System</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Dashboard</a>
+  <a href="#">Cars</a>
+  <a href="#">Real Estate</a>
+  <a href="#">Gas</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Modern Business Platform</h2>
+  <p>Manage all your businesses in one system</p>
+  <button onclick="showMessage()">Get Started</button>
+</section>
+
+<section class="cards">
+  <div class="card">🚗 Car Sales Module</div>
+  <div class="card">🏠 Real Estate Module</div>
+  <div class="card">⛽ Gas Supply Module</div>
+  <div class="card">📊 Admin Dashboard</div>
+</section>
+
+<footer>
+  <p>© 2026 Lenny Good Life System</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+🚀 📁 PROJECT STRUCTURE (V10)
+
+lenny-good-life-v10/
+│
+├── index.html
+├── style.css
+├── app.js
+├── server.js
+├── package.json
+└── render.yaml
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  background: #111827;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #1f2937;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 30px;
+}
+
+.card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+}
+🌐 1. index.html
+HTML
+🎨 2. style.css
+CSS
+⚙️ 3. app.js
+JavaScript
+function showMessage() {
+  alert("Welcome to Lenny Good Life V10 Enterprise System 🚀");
+}
+
+console.log("V10 System Loaded");
+🖥️ 4. server.js (Backend)
+const express = require("express");
+const app = express();
+const path = require("path");
+
+app.use(express.static(__dirname));
+
+// API Route
+app.get("/api/status", (req, res) => {
+  res.json({
+    status: "online",
+    version: "V10 Enterprise",
+    system: "Lenny Good Life"
+  });
+});
+
+// Serve frontend
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
+});
+JavaScript
+📦 5. package.json
+JSON
+{
+  "name": "lenny-good-life-v10",
+  "version": "10.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+☁️ 6. render.yaml (Deploy on Render)
+YAML
+services:
+  - type: web
+    name: lenny-good-life-v10
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+🚀 HOW TO RUN IT
+1. Install dependencies
+Bash
+npm install
+2. Start server
+Bash
+npm start
+3. Open in browser
+
+http://localhost:3000
+🔥 If you want next upgrade
+Say any of these:
+“�⁠Add login system”
+“�⁠Add database (MongoDB)”
+“�⁠Upgrade to V11 enterprise AI system”
+“�⁠Make it mobile app ready”
+I can turn this into a full enterprise SaaS platform.
